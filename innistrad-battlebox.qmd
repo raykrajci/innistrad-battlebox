@@ -1,0 +1,73 @@
+---
+title: "Innistrad Battlebox"
+author: "Ray Krajci"
+format: pdf
+---
+
+```{r}
+library(tidyverse)
+```
+
+# Innistrad Battlebox
+
+## Rules
+
+### Shared Deck
+
+### Lands
+
+### Graveyards
+
+### Bury and Draw
+
+## Cards
+
+```{r}
+scale_color <- tribble(
+  ~colors, ~primary, ~secondary,
+  "W", "khaki", "gray",
+  "U", "navy", "gray",
+  "B", "darkslategray", "gray",
+  "R", "firebrick", "gray",
+  "G", "darkgreen", "gray",
+  "UW", "khaki", "navy",
+  "RW", "khaki", "firebrick",
+  "GW", "khaki", "darkgreen",
+  "BU", "darkslategray", "navy",
+  "BR", "darkslategray", "firebrick",
+  "GR", "firebrick", "darkgreen",
+  "BW", "khaki", "darkslategray"
+)
+
+scale_color_primary <- deframe(data.frame(scale_color$colors, scale_color$primary))
+scale_color_secondary <- deframe(data.frame(scale_color$colors, scale_color$secondary))
+
+```
+
+### Colors
+
+```{r}
+read_csv("decklist.csv") %>% 
+  uncount(quantity) %>% 
+  mutate(colors = factor(colors, levels = color_tibble$colors)) %>% 
+  ggplot(aes(x = colors, color = colors, fill = colors))+
+  geom_bar(linewidth = 1.5)+
+  scale_color_manual(values = scale_color_primary, aesthetics = "fill")+
+  scale_color_manual(values = scale_color_secondary, aesthetics = "color")
+```
+
+
+
+### Costs
+```{r}
+
+read_csv("decklist.csv") %>% 
+  uncount(quantity) %>%
+  mutate(cmd = factor(cmc)) %>% 
+  ggplot(aes(cmc))+
+  geom_bar()
+
+```
+
+### Types
+

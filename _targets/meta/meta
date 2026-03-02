@@ -1,0 +1,13 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+api_url|stem|5202b60257768be0|91bb039c6f26989d|2c530c1562a7fbd1|-405506790||t20513.7612322423s|ba51273727d9db07|90|rds|local|vector|||0.016||
+cards|stem|9935120f5a2aa680|852d0c426c76a8a6|102defd8935ead89|-205904536||t20513.8757136271s|5318388f54e50d48|55380|rds|local|vector|||0||
+cards_decklist|stem|1d566f514d8ba795|852d0c426c76a8a6|f7632532e1e758bf|387513897||t20513.8218307064s|2ad03df0ddb209ec|55320|rds|local|vector|||0||
+cards_df|stem|1d566f514d8ba795|a8d81f0cd87b725b|fef7426cfdfdab2c|-1081496371||t20513.8169361751s|2ad03df0ddb209ec|55320|rds|local|vector|||1.531|NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion. NAs introduced by coercion|
+cards_list|stem|34057d91836f9a82|b29d4c8270f04c50|7e02334451b46def|-1626964019||t20513.7624217388s|01e1c08ceabd31b4|365755|rds|local|vector|||1.859||
+decklist|stem|fc3a465f7c616dec|5bb44c504c687c68|fff9a468d4cf3da7|223781584||t20513.8705335327s|7ad9b13f877293b8|55381|rds|local|vector|||0.016||
+fetch_cards|function|e48d50b34a1f60b0|||||||||||||||
+format_cards|function|f917f94bac336308|||||||||||||||
+format_decklist|function|fe5abefcd21987c1|||||||||||||||
+parse_cards|function|5897b0fbb3f09534|||||||||||||||
+req|stem|48bdc4734f7267fa|27b7b600baef579f|0ca6edeb9363f3da|-833282206||t20513.762399435s|a9beabbf8b155df9|1261|rds|local|vector|||0.015||
+saved|stem|9935120f5a2aa680|2106ef07bfdf986d|85b2e3b75806c70c|1295446722||t20513.875715458s|5318388f54e50d48|55380|rds|local|vector|||0.14||
